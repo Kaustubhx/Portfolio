@@ -23,19 +23,19 @@ function ExperienceCard({ experience }: Props) {
                 <h4 className='text-3xl md:text-4xl font-light'>Frontend Developer</h4>
                 <p className='font-bold text-xl md:text-2xl mt-1'>Vision To Reality Labs</p>
                 <div className='flex space-x-2 my-2'>
-                    {experience.technologies.map((technology) => (
-                        <div key={technology._id} className='h-10 w-10 relative'>
+                    {experience?.technologies.map((technology) => (
+                        <div key={technology?._id} className='h-10 w-10 relative'>
                             <Image src={urlFor(technology?.image).url()} alt="" fill />
                         </div>
                     ))}
                 </div>
                 <p className='uppercase py-5 text-neutral-500'>
-                    {new Date(experience.dateStarted).toDateString()} -{" "}
-                    {experience.isCurrentWorkingHere ? 'Present' : new Date(experience.dateEnded).toDateString()}
+                    {new Date(experience?.dateStarted).toDateString()} -{" "}
+                    {experience?.isCurrentWorkingHere ? 'Present' : new Date(experience?.dateEnded).toDateString()}
                 </p>
 
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
-                    {experience.points.map((point, i) => (
+                    {experience?.points.map((point, i) => (
                         <li key={i}>{point}</li>
                     ))}
                 </ul>

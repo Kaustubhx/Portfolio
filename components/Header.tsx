@@ -38,10 +38,10 @@ function Header({ socials }: Props) {
                 }}
                 transition={{ duration: 1.5 }}
                 className='flex flex-row items-center'>
-                {socials.map((social) => (
+                {socials?.map((social) => (
                     <SocialIcon
-                        key={social._id}
-                        url={social.url}
+                        key={social?._id}
+                        url={social?.url}
                         fgColor="#262626"
                         bgColor='transparent'
                     />
