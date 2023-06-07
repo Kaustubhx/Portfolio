@@ -32,8 +32,8 @@ function ContactMe({ pageInfo }: Props) {
                 opacity: 1,
             }}
             transition={{ duration: 1.5 }}
-            className='my-12 flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-            <div className='mt-20 flex flex-col relative text-center md:text-left md:flex-row justify-evenly mx-auto items-center '>
+            className='my-12 flex flex-col relative text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center'>
+            <div className='my-20 flex flex-col relative text-center md:text-left md:flex-row justify-evenly mx-10 items-center '>
                 <h3 className='uppercase tracking-[20px] text-neutral-500 text-2xl absolute top-0'>
                     About
                 </h3>
@@ -91,7 +91,7 @@ function ContactMe({ pageInfo }: Props) {
                         />
                         <button
                             type='submit'
-                            className='bg-neutral-900 py-5 px-10 rounded-md text-white font-bold text-lg'>
+                            className='bg-neutral-900 py-5 px-10 rounded-md text-white font-bold text-lg !mb-5'>
                             Submit
                         </button>
                     </form>

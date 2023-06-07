@@ -45,7 +45,7 @@ export interface Experience extends SanityBody {
     companyImage: string;
     dateStarted: date;
     dateEnded: date;
-    isCurrentWorkingHere: boolean;
+    isCurrentlyWorkingHere: boolean;
     jobTitle: string;
     points: string[];
     technologies: Technology[];

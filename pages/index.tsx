@@ -30,9 +30,9 @@ type Props = {
 
 export default function Home({ pageInfo, experiences, skills, projects, socials, }: Props) {
   return (
-    <div className='h-screen z-0 snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-neutral-900/20 scrollbar-thumb-neutral-900/80'>
+    <div className='h-screen z-0 snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar-thin lg:scrollbar scrollbar-track-neutral-900/20 scrollbar-thumb-neutral-900/80'>
       <Head>
-        <title>Create Next App</title>
+        <title>Kaustubh&apos;s Portfolio</title>
       </Head>
 
       <Header socials={socials} />
@@ -62,7 +62,7 @@ export default function Home({ pageInfo, experiences, skills, projects, socials,
       </section>
 
       <Link href="#hero">
-        <footer className='sticky bottom-0 w-full cursor-pointer my-5'>
+        <footer className='sticky bottom-2 w-full cursor-pointer my-5'>
           <div className='flex items-center justify-center'>
             <ChevronUpIcon className='h-10 w-10 text-white bg-neutral-900 rounded-full' />
           </div>
