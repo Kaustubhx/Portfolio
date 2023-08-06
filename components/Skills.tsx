@@ -23,7 +23,7 @@ function Skills({ skills }: Props) {
                     HOVER OVER A SKILL FOR CURRENT PROFIECIENCY
                 </h3>
 
-                <div className='mt-24 grid grid-cols-4 gap-5'>
+                <div className='mt-24 grid grid-cols-4 gap-4'>
                     {skills?.slice(0, skills.length / 2).map((skill) => (
                         <Skill key={skill?._id} skill={skill} directionLeft={false} />
                     ))}

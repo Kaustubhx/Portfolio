@@ -8,9 +8,6 @@ type Props = {
 }
 
 function ExperienceCard({ experience }: Props) {
-
-    console.log(experience)
-
     return (
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[295px] md:w-[600px] xl:w-[900px] bg-neutral-200 snap-center pt-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
             <div className='relative w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center'>

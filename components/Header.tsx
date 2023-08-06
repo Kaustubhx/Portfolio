@@ -9,21 +9,6 @@ type Props = {
 };
 
 function Header({ socials }: Props) {
-  const connects = [
-    {
-      id: "1",
-      link: "https://www.linkedin.com/in/kaustubhxganekar/",
-    },
-    {
-      id: "2",
-      link: "https://github.com/Kaustubhx",
-    },
-    {
-      id: "3",
-      link: "https://www.instagram.com/kaustubhx.__/",
-    },
-  ];
-
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div

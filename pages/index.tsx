@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 import About from '../components/About'
 import ContactMe from '../components/ContactMe'
 import WorkExperience from '../components/WorkExperience'
@@ -9,7 +9,6 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { ChevronUpIcon } from '@heroicons/react/24/solid'
-import { GetStaticProps } from 'next'
 import { GetServerSideProps } from 'next'
 import { Experience, PageInfo, Project, Skill, Social } from '@/typings'
 import { fetchPageInfo } from '@/utils/fetchPageInfo'
@@ -54,14 +53,20 @@ export default function Home({ pageInfo, experiences, skills, projects, socials,
       </section>
 
       <section id='projects' className="snap-start">
-        <Projects projects={projects}/>
+        <Projects projects={projects} />
       </section>
 
       <section id='contact' className='snap-start'>
-        <ContactMe pageInfo={pageInfo}/>
+        <ContactMe pageInfo={pageInfo} />
       </section>
 
-      <Link href="#hero">
+      <Link
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
         <footer className='sticky bottom-2 w-full cursor-pointer my-5'>
           <div className='flex items-center justify-center'>
             <ChevronUpIcon className='h-10 w-10 text-white bg-neutral-900 rounded-full' />
