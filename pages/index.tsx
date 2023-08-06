@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Link } from 'react-scroll'
+import Link from 'next/link'
 import About from '../components/About'
 import ContactMe from '../components/ContactMe'
 import WorkExperience from '../components/WorkExperience'
@@ -60,13 +60,7 @@ export default function Home({ pageInfo, experiences, skills, projects, socials,
         <ContactMe pageInfo={pageInfo} />
       </section>
 
-      <Link
-        to="hero"
-        spy={true}
-        smooth={true}
-        offset={50}
-        duration={500}
-      >
+      <Link href='#hero'>
         <footer className='sticky bottom-2 w-full cursor-pointer my-5'>
           <div className='flex items-center justify-center'>
             <ChevronUpIcon className='h-10 w-10 text-white bg-neutral-900 rounded-full' />

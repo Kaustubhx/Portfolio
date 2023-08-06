@@ -1,7 +1,7 @@
 import { urlFor } from '@/sanity'
 import { PageInfo } from '@/typings'
 import Image from 'next/image'
-import { Link, ScrollLink } from "react-scroll"
+import Link from "next/link"
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundClircles from './BackgroundClircles'
@@ -41,42 +41,22 @@ function Hero({ pageInfo }: Props) {
                 </h1>
 
                 <div className='pt-5'>
-                    <Link
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                    >
+                    <Link href="#about">
                         <button className="heroBtn">
                             About
                         </button>
                     </Link>
-                    <Link
-                        to="experience"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                    >
+                    <Link href="#experience">
                         <button className="heroBtn">
                             Experience
                         </button>
                     </Link>
-                    <Link
-                        to="skills"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                    >
+                    <Link href="#skills">
                         <button className="heroBtn">
                             Skills
                         </button>
                     </Link>
-                    <Link
-                        to="projects"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                    >
+                    <Link href="#projects">
                         <button className="heroBtn">
                             Projects
                         </button>
