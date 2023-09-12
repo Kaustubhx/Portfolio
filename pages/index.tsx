@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import About from '../components/About'
 import ContactMe from '../components/ContactMe'
@@ -10,14 +9,19 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { ChevronUpIcon } from '@heroicons/react/24/solid'
 import { GetServerSideProps } from 'next'
-import { Experience, PageInfo, Project, Skill, Social } from '@/typings'
 import { fetchPageInfo } from '@/utils/fetchPageInfo'
 import { fetchExperience } from '@/utils/fetchExperiences'
 import { fetchSkills } from '@/utils/fetchSkills'
 import { fetchSocial } from '@/utils/fetchSocials'
 import { fetchProject } from '@/utils/fetchProjects'
 
-const inter = Inter({ subsets: ['latin'] })
+import {
+  Experience,
+  PageInfo,
+  Project,
+  Skill,
+  Social
+} from '@/typings'
 
 type Props = {
   pageInfo: PageInfo;

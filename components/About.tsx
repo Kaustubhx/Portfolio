@@ -36,6 +36,8 @@ function About({ pageInfo }: Props) {
                         x: 0,
                     }}
                     viewport={{ once: true }}
+                    loading='lazy'
+                    alt='profilePic'
                     src={urlFor(pageInfo?.profilePic).url()}
                     className='mt-14 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:h-[500px] xl:w-[600px]'
                 />

@@ -30,6 +30,8 @@ function Hero({ pageInfo }: Props) {
                     src={urlFor(pageInfo?.heroImage).url()}
                     alt=''
                     fill
+                    sizes='(height: 10rem), (width: 10rem)'
+                    priority={true}
                 />
             </div>
 
