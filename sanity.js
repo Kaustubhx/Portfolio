@@ -1,14 +1,17 @@
-import { createClient, groq } from 'next-sanity'
+import { createClient } from 'next-sanity'
 import createImageUrlBuilder from '@sanity/image-url'
 
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
+
 export const config = {
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'ydtefbyj',
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
-    apiVersion: "2022-11-16",
-    useCdn: false,
+    projectId,
+    dataset,
+    apiVersion: '2022-11-16',
+    useCdn: false
 }
 
 export const sanityClient = createClient(config);
 
-export const urlFor = (source) =>
-    createImageUrlBuilder(config).image(source);
+export const urlFor = (source) => 
+    createImageUrlBuilder(config).image(source)
