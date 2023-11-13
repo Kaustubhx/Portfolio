@@ -18,6 +18,7 @@ function ExperienceCard({ experience }: Props) {
                     src={urlFor(experience?.companyImage).url()}
                     alt=''
                     fill
+                    sizes='(height: 8rem), (width: 8rem)'
                 />
             </div>
 
