@@ -14,6 +14,8 @@ import getSkills from '@/utils/getSkills'
 import getProjects from '@/utils/getProjects'
 import getSocials from '@/utils/getSocials'
 
+export const revalidate = 3600
+
 export default async function Home() {
 
     const pageInfo: PageInfo = await getPageInfo();
