@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { motion } from 'framer-motion'
 import Skill from './Skill'
@@ -8,6 +10,7 @@ type Props = {
 }
 
 function Skills({ skills }: Props) {
+
     return (
         <motion.div
             initial={{ opacity: 0 }}

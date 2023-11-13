@@ -1,3 +1,5 @@
+'use client'
+
 import { urlFor } from '@/sanity'
 import { Experience } from '@/typings'
 import Image from 'next/image'
