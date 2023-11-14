@@ -33,6 +33,7 @@ function Projects({ projects }: Props) {
                         <div key={project?._id} className='w-screen flex-shrink-0 snap-center snap-mandatory flex flex-col space-y-5 items-center justify-center px-10'>
                             <Link
                                 href={project?.linkToBuild}
+                                target='_blank'
                                 className='h-56 w-56 md:h-64 md:w-64 lg:h-[300px] lg:w-[500px] relative'
                             >
                                 <Image className='object-contain' src={urlFor(project?.image).url()} alt='' fill />
