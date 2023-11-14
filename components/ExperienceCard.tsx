@@ -14,7 +14,7 @@ function ExperienceCard({ experience }: Props) {
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[295px] md:w-[600px] xl:w-[900px] bg-neutral-200 snap-center pt-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
             <div className='relative w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center'>
                 <Image
-                    className='rounded-full'
+                    className='rounded-full object-cover'
                     src={urlFor(experience?.companyImage).url()}
                     alt=''
                     fill
@@ -23,8 +23,8 @@ function ExperienceCard({ experience }: Props) {
             </div>
 
             <div className='px-0 md:px-10'>
-                <h4 className='text-3xl md:text-4xl font-light'>Frontend Developer</h4>
-                <p className='font-bold text-xl md:text-2xl mt-1'>Vision To Reality Labs</p>
+                <h4 className='text-3xl md:text-4xl font-light'>{experience?.jobTitle}</h4>
+                <p className='font-bold text-xl md:text-2xl mt-1'>{experience?.company}</p>
                 <div className='flex space-x-2 my-2 px-5'>
                     {experience?.technologies.map((technology) => (
                         <div key={technology?._id} className='h-10 w-10 relative'>

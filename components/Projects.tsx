@@ -50,7 +50,7 @@ function Projects({ projects }: Props) {
                     ))}
                 </div>
 
-                <div className='w-full absolute top-[30%] bg-neutral-900/10 left-0 h-[500px] -skew-y-12' />
+                <div className='w-full absolute top-[20%] bg-neutral-900/10 left-0 h-[500px] -skew-y-12' />
             </div>
         </motion.div>
     )

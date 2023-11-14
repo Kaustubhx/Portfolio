@@ -28,7 +28,8 @@ function Hero({ pageInfo }: Props) {
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundClircles />
             <div className='h-40 w-40 mx-auto relative'>
-                <Image className='object-contain absolute border-[3px] border-neutral-900 animate-morph'
+                <Image
+                    className='object-contain absolute border-[3px] border-neutral-900 animate-morph'
                     src={urlFor(pageInfo?.heroImage).url()}
                     alt=''
                     fill
