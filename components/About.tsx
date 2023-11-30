@@ -19,7 +19,7 @@ function About({ pageInfo }: Props) {
                 opacity: 1,
             }}
             transition={{ duration: 1.5 }}
-            className='mt-12 flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
+            className='mt-12 flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-5 justify-evenly mx-auto items-center min-h-screen h-full'>
             <div className='mt-20 flex flex-col relative text-center md:text-left md:flex-row justify-evenly mx-auto items-center '>
                 <h3 className='uppercase tracking-[20px] text-neutral-500 text-2xl absolute top-0'>
                     About

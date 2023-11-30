@@ -30,7 +30,7 @@ function Projects({ projects }: Props) {
 
                 <div className='mt-12 relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 pb-20 scrollbar-thin scrollbar-track-neutral-900/20 scrollbar-thumb-neutral-900/80'>
                     {projects.map((project, i) => (
-                        <div key={project?._id} className='w-screen flex-shrink-0 snap-center snap-mandatory flex flex-col space-y-5 items-center justify-center px-10'>
+                        <div key={project?._id} className='w-screen flex-shrink-0 snap-center snap-mandatory flex flex-col space-y-5 items-center justify-center px-5'>
                             <Link
                                 href={project?.linkToBuild}
                                 target='_blank'
