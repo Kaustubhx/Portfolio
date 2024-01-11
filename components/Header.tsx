@@ -49,21 +49,40 @@ function Header({ socials }: Props) {
           scale: 1,
         }}
         transition={{ duration: 1.5 }}
-        className="flex flex-row items-center text-neutral-400 cursor-pointer"
+        className="flex flex-row items-center text-neutral-400 cursor-pointer space-x-2"
       >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="#262626"
-          bgColor="transparent"
-        />
-        <Link 
-        href="#contact"
-        >
-          <button className="uppercase hidden md:inline-flex text-sm text-neutral-400">
-            Get In Touch
-          </button>
-        </Link>
+        <>
+          <SocialIcon
+            className="cursor-pointer"
+            network="rss"
+            fgColor="#262626"
+            bgColor="transparent"
+            style={{ height: 40, width: 40 }}
+          />
+          <Link
+            href="https://blog-kaustubh.vercel.app/"
+          >
+            <button className="uppercase hidden md:inline-flex text-sm text-neutral-400">
+              Blog
+            </button>
+          </Link>
+        </>
+        <>
+          <SocialIcon
+            className="cursor-pointer"
+            network="email"
+            fgColor="#262626"
+            bgColor="transparent"
+            style={{ height: 40, width: 40 }}
+          />
+          <Link
+            href="#contact"
+          >
+            <button className="uppercase hidden md:inline-flex text-sm text-neutral-400">
+              Get In Touch
+            </button>
+          </Link>
+        </>
       </motion.div>
     </header>
   );
