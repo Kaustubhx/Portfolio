@@ -14,7 +14,7 @@ import getSkills from '@/utils/getSkills'
 import getProjects from '@/utils/getProjects'
 import getSocials from '@/utils/getSocials'
 
-export const revalidate = 3600
+export const revalidate = process.env.NODE_ENV === 'production' ? 3600 : 0
 
 export default async function Home() {
 
