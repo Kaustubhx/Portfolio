@@ -3,7 +3,6 @@
 import { urlFor } from '@/sanity'
 import { Experience } from '@/typings'
 import Image from 'next/image'
-import React from 'react'
 
 type Props = {
     experience: Experience

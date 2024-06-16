@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from "react-hook-form";
