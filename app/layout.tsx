@@ -6,7 +6,8 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
     title: "Kaustubh's Portfolio",
-    description: 'Welcome to Next.js',
+    description: 'I solve and create. I code and innovate. This is where my ideas meet execution.',
+    keywords: ['Kaustubh', "kaustubh-portfolio", "kaustubh ganekar", "kaustubhx", "kaustubhx instagram"]
 }
 
 const inter = Inter({ subsets: ['latin'] })

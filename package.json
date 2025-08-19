@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -23,11 +23,11 @@
     "clsx": "^2.1.1",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.396.0",
-    "next": "^14.2.4",
+    "next": "15.4.7",
     "next-sanity": "^4.1.5",
     "nodemailer": "^6.9.14",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "react-hook-form": "^7.52.0",
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
@@ -42,16 +42,19 @@
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
     "@types/node": "^18.15.5",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "19.1.7",
     "@types/nodemailer": "^6.4.15",
     "@types/react-scroll": "^1.8.7",
     "@types/styled-components": "^5.1.26",
     "autoprefixer": "^10.4.14",
     "eslint": "8.36.0",
-    "eslint-config-next": "^14.2.4",
+    "eslint-config-next": "15.4.7",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7",
     "typescript": "^5.0.2"
+  },
+  "resolutions": {
+    "@types/react-dom": "19.1.7"
   }
 }

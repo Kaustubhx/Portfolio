@@ -21,7 +21,6 @@ import { PageInfo } from '@/typings';
 import { Textarea } from './ui/textarea'
 import sendEmailAction from '@/actions/sendEmailAction'
 import { useState } from 'react'
-import { revalidatePath } from 'next/cache'
 
 type Props = {
     pageInfo: PageInfo;
@@ -61,6 +60,7 @@ function ContactMe({ pageInfo }: Props) {
         try {
             isPending(true);
             await sendEmailAction(values);
+            isPending(false);
         } catch (error) {
             isPending(false)
         } finally {
