@@ -30,6 +30,7 @@ function Header({ socials }: Props) {
           <SocialIcon
             key={social?._id}
             url={social?.url}
+            target="_blank"
             fgColor="#262626"
             bgColor="transparent"
           />
